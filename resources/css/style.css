@@ -202,6 +202,7 @@ header nav ul li a:hover {
 
 #contact .flex {
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 #contact .logo {
