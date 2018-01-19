@@ -6,10 +6,19 @@ body {
 
 h1 {
 	font-family: "Dancing Script";
+	font-size: 3em;
+}
+
+h1, h2, h3, h4 {
+	margin: 0 0 0.5em 0;
 }
 
 h2, h3, h4, p, li {
 	font-family: "Nunito Sans";
+}
+
+h3, h4, p {
+	font-weight: 400;
 }
 
 .flex {
@@ -18,14 +27,17 @@ h2, h3, h4, p, li {
 	justify-content: space-between;
 }
 
-/* Header and Navigation */
+/* HEADER AND NAVIGATION */
 
 header {
 	position: fixed;
 	overflow: hidden;
+	z-index: 100;
 	height: 70px;
 	width: 100%;
 	border-bottom: 1px solid seashell;
+	background-color: black;
+	box-shadow: -2px 8px 15px rgba(0,0,0,0.5);
 }
 
 header .flex {
@@ -35,13 +47,12 @@ header .flex {
 header #logo {
 	height: 50px;
 	padding-left: 10px;
-	flex-grow: 2;
 }
 
 header nav {
 	padding-right: 10px;
 	font-size: 22px;
-	font-weight: 200;
+	font-weight: 300;
 }
 
 /* -- Navigation Links */
@@ -59,4 +70,23 @@ header nav ul li a {
 header nav ul li a:hover {
 	color: seashell;
 	border-bottom: 1px solid seashell;
+}
+
+/* MAIN LANDING IMAGE SECTION */
+#landing {
+	position: relative;
+	top: 70px;
+}
+
+#landing-image {
+	background: url("../img/img-mission-background.jpg") center no-repeat;
+	background-size: cover;
+	min-height: 700px;
+}
+
+#landing-text {
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	padding: 10px 0;
+	text-align: center;
 }
