@@ -1,4 +1,62 @@
 body {
 	margin: 0 auto;
-	font-family: ;
+	background-color: black;
+	color: seashell;
+}
+
+h1 {
+	font-family: "Dancing Script";
+}
+
+h2, h3, h4, p, li {
+	font-family: "Nunito Sans";
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Header and Navigation */
+
+header {
+	position: fixed;
+	overflow: hidden;
+	height: 70px;
+	width: 100%;
+	border-bottom: 1px solid seashell;
+}
+
+header .flex {
+	height: 70px;
+}
+
+header #logo {
+	height: 50px;
+	padding-left: 10px;
+	flex-grow: 2;
+}
+
+header nav {
+	padding-right: 10px;
+	font-size: 22px;
+	font-weight: 200;
+}
+
+/* -- Navigation Links */
+
+header nav ul li {
+	display: inline-block;
+	padding: 0 10px;
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: seashell;
+}
+
+header nav ul li a:hover {
+	color: seashell;
+	border-bottom: 1px solid seashell;
 }
