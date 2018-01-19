@@ -23,10 +23,16 @@ h3, h4, p {
 
 .flex {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 
+.black-bg {
+	background: rgba(0,0,0,0.8);
+}
+
 /* HEADER AND NAVIGATION */
+
 header {
 	position: fixed;
 	overflow: hidden;
@@ -44,7 +50,7 @@ header .flex {
 	justify-content: space-between;
 }
 
-header #logo {
+header .logo {
 	height: 50px;
 	padding-left: 10px;
 }
@@ -56,7 +62,6 @@ header nav {
 }
 
 /* -- Navigation Links */
-
 header nav ul li {
 	display: inline-block;
 	padding: 0 10px;
@@ -72,7 +77,9 @@ header nav ul li a:hover {
 	border-bottom: 1px solid seashell;
 }
 
+
 /* MAIN LANDING IMAGE SECTION */
+
 .section {
 	position: relative;
 	top: 70px;
@@ -86,16 +93,18 @@ header nav ul li a:hover {
 }
 
 #landing-text {
-	background: rgba(0,0,0,0.7);
 	width: 100%;
 	padding: 10px 0;
 	text-align: center;
 }
 
+
 /* FEATURED TEAS */
-#featured-tea { /* Section styling*/
+
+/* Section div styling*/
+#featured-tea { 
 	margin: 0 auto;
-	padding: 3em;
+	padding: 4em 0em 6em 0em;
 	max-width: 1000px;
 	text-align: center;
 }
@@ -106,7 +115,8 @@ header nav ul li a:hover {
 	flex-wrap: wrap;
 }
 
-#featured-tea .tea-image {
+/* Set tea image divs to flex*/
+.tea-image {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -115,35 +125,97 @@ header nav ul li a:hover {
 	margin: 15px 15px;
 }
 
+/* Image text span styling */
 .tea-highlight {
 	margin: 0;
 	padding: 0.2em 0.4em;
 	font-family: "Nunito Sans","Helvetica",sans-serif;
 	font-weight: 300;
 	font-size: 2em;
-	background: rgba(0,0,0,0.8);
 }
 
+/* -- Featured tea image backgrounds*/
 #tea-berry {
 	background: url("../img/img-berryblitz.jpg") center no-repeat;
 	background-size: cover;
 }
-
 #tea-spiced {
 	background: url("../img/img-spiced-rum.jpg") center no-repeat;
 	background-size: cover;
 }
-
 #tea-myrtle {
 	background: url("../img/img-myrtle-ave.jpg") center no-repeat;
 	background-size: cover;
 }
-
 #tea-bedford {
 	background: url("../img/img-bedford-bizarre.jpg") center no-repeat;
 	background-size: cover;
 }
-
 #tea-donuts {
 	background: url("../img/img-donut.jpg") center no-repeat;
 	background-size: cover;
+}
+
+
+/* LOCATIONS */
+
+#store-locations {
+	background: url("../img/img-locations-background.jpg") center no-repeat;
+	background-size: cover;
+	min-height: 500px;
+	padding: 4em 0em 6em 0em;
+}
+
+#store-locations .flex {
+	margin: 0 auto;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	text-align: center;
+}
+
+#store-locations h1 {
+	text-align: center;
+	margin-bottom: 20px;
+
+}
+
+/* Location box styling and text styling*/
+.location {
+	width: 300px;
+	margin: 10px;
+	padding: 2em 0;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 2em;
+}
+
+
+/* CONTACT */
+#contact {
+	margin: 0 auto;
+	padding-top: 4em;
+	max-width: 1000px;
+	text-align: center;
+}
+
+#contact .flex {
+	align-items: center;
+}
+
+#contact .logo {
+	padding-left: 1em;
+}
+
+#contact h4 {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	margin-top: 1em;
+}
+
+
+/* FOOTER */
+footer {
+ padding: 2em 0 0 1em;
+}
