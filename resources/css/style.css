@@ -1,11 +1,11 @@
 body {
-	margin: 0 auto;
+	margin: 0;
 	background-color: black;
 	color: seashell;
 }
 
 h1 {
-	font-family: "Dancing Script";
+	font-family: "Dancing Script","Helvetica",sans-serif;
 	font-size: 3em;
 }
 
@@ -14,21 +14,19 @@ h1, h2, h3, h4 {
 }
 
 h2, h3, h4, p, li {
-	font-family: "Nunito Sans";
+	font-family: "Nunito Sans","Helvetica",sans-serif;
 }
 
 h3, h4, p {
-	font-weight: 400;
+	font-weight: 300;
 }
 
 .flex {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 
 /* HEADER AND NAVIGATION */
-
 header {
 	position: fixed;
 	overflow: hidden;
@@ -38,10 +36,12 @@ header {
 	border-bottom: 1px solid seashell;
 	background-color: black;
 	box-shadow: -2px 8px 15px rgba(0,0,0,0.5);
+
 }
 
 header .flex {
 	height: 70px;
+	justify-content: space-between;
 }
 
 header #logo {
@@ -73,9 +73,10 @@ header nav ul li a:hover {
 }
 
 /* MAIN LANDING IMAGE SECTION */
-#landing {
+.section {
 	position: relative;
 	top: 70px;
+	width: 100%;
 }
 
 #landing-image {
@@ -90,3 +91,59 @@ header nav ul li a:hover {
 	padding: 10px 0;
 	text-align: center;
 }
+
+/* FEATURED TEAS */
+#featured-tea { /* Section styling*/
+	margin: 0 auto;
+	padding: 3em;
+	max-width: 1000px;
+	text-align: center;
+}
+
+#featured-tea .flex {
+	margin-top: 3em;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#featured-tea .tea-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	width: 300px;
+	margin: 15px 15px;
+}
+
+.tea-highlight {
+	margin: 0;
+	padding: 0.2em 0.4em;
+	font-family: "Nunito Sans","Helvetica",sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	background: rgba(0,0,0,0.8);
+}
+
+#tea-berry {
+	background: url("../img/img-berryblitz.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#tea-spiced {
+	background: url("../img/img-spiced-rum.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#tea-myrtle {
+	background: url("../img/img-myrtle-ave.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#tea-bedford {
+	background: url("../img/img-bedford-bizarre.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#tea-donuts {
+	background: url("../img/img-donut.jpg") center no-repeat;
+	background-size: cover;
